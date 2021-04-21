@@ -69,6 +69,10 @@ public class OrderItem implements Serializable{
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	//na plataforma java o que conta é a palavra get, por esse motivo não adianta colocar só subTotal
+	public Double getSubTotal() {
+		return price*quantity;
+	}
 
 	@Override
 	public int hashCode() {
